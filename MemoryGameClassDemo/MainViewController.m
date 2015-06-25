@@ -79,9 +79,11 @@
     return 60;
 }
 
+
 - (UIColor *)labelFontColor {
     return [UIColor whiteColor];
 }
+
 
 - (NSString *)labelFontName {
     return [NSString stringWithFormat:@"Futura"];
