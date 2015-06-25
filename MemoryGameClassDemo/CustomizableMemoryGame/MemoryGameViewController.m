@@ -134,9 +134,7 @@
     /* Set size of score label */
     CGFloat scoreLabelXPos = edgeSpace;
     int heightOfCards = (int)(((self.numberOfCards * 2) - 1)/ numberOfCardsInRow) + 1;
-    NSLog(@"Height of Cards: %d", heightOfCards);
     CGFloat scoreLabelYPos = NAV_BAR_HEIGHT + (0.25 * NAV_BAR_HEIGHT) + (heightOfCards*cardHeight*1.5);
-    NSLog(@"Y-Position of Score Label: %f", scoreLabelYPos);
     CGFloat scoreLabelWidth = screenWidth - (edgeSpace * 2);
     CGFloat scoreLabelHeight = 50.0;
     
@@ -211,10 +209,8 @@
 }
 
 -(void)disableFirstAndCurrentButtons {
-    NSLog(@"Disabling button with tag %lu", self.firstButtonIndex);
     [[self.buttons objectAtIndex:self.firstButtonIndex] setEnabled:NO];
     [[self.buttons objectAtIndex:self.firstButtonIndex] setSelected:YES];
-    NSLog(@"Disabling button with tag %lu", self.currButtonIndex);
     [[self.buttons objectAtIndex:self.currButtonIndex] setEnabled:NO];
     [[self.buttons objectAtIndex:self.currButtonIndex] setSelected:YES];
 }
@@ -312,14 +308,11 @@
             while([[self.board objectAtIndex:randomSlot] intValue] != -1){
                 randomSlot = arc4random() % (self.numberOfCards * 2);
             }
-            NSLog(@"Assigning %d to slot %d\n", i, randomSlot);
             [self.board replaceObjectAtIndex:randomSlot withObject:[[NSNumber alloc] initWithInteger: i]];
-            NSLog(@"Slot %d now contains %d\n", randomSlot, [[self.board objectAtIndex:randomSlot] intValue]);
         }
         
     }
     
-    NSLog(@"The BOARD: @%@", self.board);
     self.flippedCards = 0;
     self.pairsFound = 0;
     self.scoreLabel.text = @"Score: 0";
@@ -348,9 +341,7 @@
 }
 
 -(void)faceLastTwoCardsDown {
-    NSLog(@"Facing Down Card %lu", self.firstButtonIndex);
     [self faceCardWithThisIndexDown:self.firstButtonIndex];
-    NSLog(@"Facing Down Card %lu", self.currButtonIndex);
     [self faceCardWithThisIndexDown:self.currButtonIndex];
     [self reenableUnmatchedButtons];
 }
