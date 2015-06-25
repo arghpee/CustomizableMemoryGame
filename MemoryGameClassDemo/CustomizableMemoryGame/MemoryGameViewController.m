@@ -10,6 +10,9 @@
 #define NAV_BAR_HEIGHT 70
 #define FLIP_DELAY 1.0
 #define WIN_DELAY 0.5
+#define DEFAULT_FONT_COLOR [UIColor blackColor]
+#define DEFAULT_FONT_SIZE 25
+#define DEFAULT_FONT_NAME @"Futura"
 
 @interface MemoryGameViewController ()
 
@@ -101,6 +104,33 @@
         [self.buttons addObject:button];
     }
     
+    /* Get Label Font Color if Available */
+    UIColor *labelFontColor;
+    if ([self.delegate respondsToSelector:@selector(labelFontColor)]) {
+        labelFontColor = [self.delegate labelFontColor];
+    }
+    else {
+        labelFontColor = DEFAULT_FONT_COLOR;
+    }
+    
+    /* Get Label Font Size if Available */
+    NSInteger labelFontSize;
+    if ([self.delegate respondsToSelector:@selector(labelFontSize)]) {
+        labelFontSize = [self.delegate labelFontSize];
+    }
+    else {
+        labelFontSize = DEFAULT_FONT_SIZE;
+    }
+    
+    /* Get Label Font Name if Available */
+    NSString *labelFontName;
+    if ([self.delegate respondsToSelector:@selector(labelFontName)]) {
+        labelFontName = [self.delegate labelFontName];
+    }
+    else {
+        labelFontName = DEFAULT_FONT_NAME;
+    }
+    
     /* Set size of score label */
     CGFloat scoreLabelXPos = edgeSpace;
     int heightOfCards = (int)(((self.numberOfCards * 2) - 1)/ numberOfCardsInRow) + 1;
@@ -112,8 +142,8 @@
     
     /* Set score label parameters */
     self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(scoreLabelXPos, scoreLabelYPos, scoreLabelWidth, scoreLabelHeight)];
-    self.scoreLabel.textColor = [UIColor whiteColor];
-    [self.scoreLabel setFont:[UIFont fontWithName:@"Futura" size:25]];
+    self.scoreLabel.textColor = labelFontColor;
+    [self.scoreLabel setFont:[UIFont fontWithName:@"Futura" size:labelFontSize]];
     
     /* Add score label to view */
     [self.view addSubview:self.scoreLabel];
@@ -126,8 +156,8 @@
     
     /* Set time remaining label parameters */
     self.timeRemainingLabel = [[UILabel alloc] initWithFrame:CGRectMake(timeRemainingLabelXPos, timeRemainingLabelYPos, timeRemainingLabelWidth, timeRemainingLabelHeight)];
-    self.timeRemainingLabel.textColor = [UIColor whiteColor];
-    [self.timeRemainingLabel setFont:[UIFont fontWithName:@"Futura" size:25]];
+    self.timeRemainingLabel.textColor = labelFontColor;
+    [self.timeRemainingLabel setFont:[UIFont fontWithName:@"Futura" size:labelFontSize]];
     self.timeRemainingLabel.text = [NSString stringWithFormat:@"Time Remaining: %lu", [self.delegate timerMaxTime]];
     
     /* Add time remaining label to view */

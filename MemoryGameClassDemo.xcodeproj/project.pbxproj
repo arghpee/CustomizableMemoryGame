@@ -15,8 +15,6 @@
 		F8A57D211B3956AD003F8091 /* MemoryGameClassDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A57D201B3956AD003F8091 /* MemoryGameClassDemoTests.m */; };
 		F8A57D2D1B3956D9003F8091 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A57D2B1B3956D9003F8091 /* MainViewController.m */; };
 		F8A57D2E1B3956D9003F8091 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A57D2C1B3956D9003F8091 /* MainViewController.xib */; };
-		F8A57D361B395A6A003F8091 /* MemoryGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A57D341B395A6A003F8091 /* MemoryGameViewController.m */; };
-		F8A57D371B395A6A003F8091 /* MemoryGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A57D351B395A6A003F8091 /* MemoryGameViewController.xib */; };
 		F8A5B0D61B3A3FA700C5DE73 /* Card0.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A5B0CD1B3A3FA700C5DE73 /* Card0.png */; };
 		F8A5B0D71B3A3FA700C5DE73 /* Card1.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A5B0CE1B3A3FA700C5DE73 /* Card1.png */; };
 		F8A5B0D81B3A3FA700C5DE73 /* Card2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A5B0CF1B3A3FA700C5DE73 /* Card2.png */; };
@@ -26,6 +24,8 @@
 		F8A5B0DC1B3A3FA700C5DE73 /* Card6.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A5B0D31B3A3FA700C5DE73 /* Card6.png */; };
 		F8A5B0DD1B3A3FA700C5DE73 /* Card7.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A5B0D41B3A3FA700C5DE73 /* Card7.png */; };
 		F8A5B0DE1B3A3FA700C5DE73 /* CardBack.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A5B0D51B3A3FA700C5DE73 /* CardBack.png */; };
+		F8C987751B3B902000394A6D /* MemoryGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C987731B3B902000394A6D /* MemoryGameViewController.m */; };
+		F8C987761B3B902000394A6D /* MemoryGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C987741B3B902000394A6D /* MemoryGameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,6 @@
 		F8A57D2A1B3956D9003F8091 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F8A57D2B1B3956D9003F8091 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F8A57D2C1B3956D9003F8091 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		F8A57D331B395A6A003F8091 /* MemoryGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryGameViewController.h; sourceTree = "<group>"; };
-		F8A57D341B395A6A003F8091 /* MemoryGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryGameViewController.m; sourceTree = "<group>"; };
-		F8A57D351B395A6A003F8091 /* MemoryGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoryGameViewController.xib; sourceTree = "<group>"; };
 		F8A5B0CD1B3A3FA700C5DE73 /* Card0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card0.png; sourceTree = "<group>"; };
 		F8A5B0CE1B3A3FA700C5DE73 /* Card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card1.png; sourceTree = "<group>"; };
 		F8A5B0CF1B3A3FA700C5DE73 /* Card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card2.png; sourceTree = "<group>"; };
@@ -65,6 +62,9 @@
 		F8A5B0D31B3A3FA700C5DE73 /* Card6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card6.png; sourceTree = "<group>"; };
 		F8A5B0D41B3A3FA700C5DE73 /* Card7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card7.png; sourceTree = "<group>"; };
 		F8A5B0D51B3A3FA700C5DE73 /* CardBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardBack.png; sourceTree = "<group>"; };
+		F8C987721B3B902000394A6D /* MemoryGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryGameViewController.h; path = CustomizableMemoryGame/MemoryGameViewController.h; sourceTree = "<group>"; };
+		F8C987731B3B902000394A6D /* MemoryGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoryGameViewController.m; path = CustomizableMemoryGame/MemoryGameViewController.m; sourceTree = "<group>"; };
+		F8C987741B3B902000394A6D /* MemoryGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MemoryGameViewController.xib; path = CustomizableMemoryGame/MemoryGameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +166,9 @@
 		F8A57D321B395A52003F8091 /* MemoryGameViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8A57D331B395A6A003F8091 /* MemoryGameViewController.h */,
-				F8A57D341B395A6A003F8091 /* MemoryGameViewController.m */,
-				F8A57D351B395A6A003F8091 /* MemoryGameViewController.xib */,
+				F8C987721B3B902000394A6D /* MemoryGameViewController.h */,
+				F8C987731B3B902000394A6D /* MemoryGameViewController.m */,
+				F8C987741B3B902000394A6D /* MemoryGameViewController.xib */,
 			);
 			name = MemoryGameViewController;
 			sourceTree = "<group>";
@@ -280,9 +280,9 @@
 				F8A5B0D91B3A3FA700C5DE73 /* Card3.png in Resources */,
 				F8A5B0DC1B3A3FA700C5DE73 /* Card6.png in Resources */,
 				F8A57D121B3956AD003F8091 /* Images.xcassets in Resources */,
+				F8C987761B3B902000394A6D /* MemoryGameViewController.xib in Resources */,
 				F8A57D2E1B3956D9003F8091 /* MainViewController.xib in Resources */,
 				F8A5B0DE1B3A3FA700C5DE73 /* CardBack.png in Resources */,
-				F8A57D371B395A6A003F8091 /* MemoryGameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 				F8A57D0A1B3956AD003F8091 /* AppDelegate.m in Sources */,
 				F8A57D2D1B3956D9003F8091 /* MainViewController.m in Sources */,
 				F8A57D071B3956AD003F8091 /* main.m in Sources */,
-				F8A57D361B395A6A003F8091 /* MemoryGameViewController.m in Sources */,
+				F8C987751B3B902000394A6D /* MemoryGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,8 +33,13 @@
 - (UIColor *)backgroundColor;
 
 /* Should return label font color */
+- (UIColor *)labelFontColor;
 
 /* Should return label font size */
+- (NSInteger)labelFontSize;
+
+/* Should return label font name */
+- (NSString *)labelFontName;
 
 @end
 
